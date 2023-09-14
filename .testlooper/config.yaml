@@ -1,0 +1,12 @@
+version: 1.0
+name: testlooper-test
+primary-branch: main
+image:
+     docker:
+       dockerfile: .testlooper/environments/Dockerfile.setup
+
+variables:
+    PYTHONPATH: ${REPO_ROOT}
+
+command:
+    python .testlooper/generate_test_plan.py  --output ${TEST_PLAN_OUTPUT}

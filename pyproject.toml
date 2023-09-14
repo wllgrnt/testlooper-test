@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0",
+            "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testlooper-test"
+version = "1.0.0"
+description = "Testlooper-test is a dummy repo for pointing Testlooper to during the testing process."
+readme = "README.md"
+authors = [
+    {name = "William Grant", email = "william.grant@aprioriinvestments.com"},
+]
+license = {text = "Apache-2.0"}
+keywords = ["testing"]
+requires-python = ">=3.10"
+dependencies = [
+    "PyYAML ~= 6.0",
+    "pytest ~= 7.4",
+    "pytest-json-report ~= 1.5",
+    "toml ~= 0.10",
+]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "group_one: tests in group one.",
+    "group_two: tests in group two.",
+]
