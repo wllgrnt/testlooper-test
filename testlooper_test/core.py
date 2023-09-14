@@ -1,5 +1,5 @@
 def main() -> str:
-    return "Hello World!"
+    return "Goodbye World!"
 
 def alternate() -> str:
     return 'Different Greetings'
