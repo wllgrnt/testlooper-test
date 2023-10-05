@@ -21,3 +21,9 @@ def test_core_function_two():
 def test_core_function_three():
     result = testlooper_test.core.alternate()
     assert result == "Greetings", "The result did not match the expected output"
+
+@pytest.mark.group_one
+def test_core_function_four():
+    # dupe of three
+    result = testlooper_test.core.alternate()
+    assert result == "Greetings", "The result did not match the expected output"
